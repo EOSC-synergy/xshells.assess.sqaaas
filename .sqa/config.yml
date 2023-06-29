@@ -15,44 +15,44 @@ sqa_criteria:
     repos:
       bitbucket.org/nschaeff/xshells git:
         commands:
-        - /usr/bin/env sh .sqa/script.lousy-sapphire-yak.sh
-        container: qc.acc_fuzzy-pear-mastiff
+        - /usr/bin/env sh .sqa/script.bluesy-cobalt-russel.sh
+        container: qc.acc_snappy-red-balinese
   QC.Doc:
     repos:
       bitbucket.org/nschaeff/xshells find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.shabby-buff-crane.sh
-        container: qc.doc_shaky-grey-dachshund
+        - /usr/bin/env sh .sqa/script.randy-brown-millipede.sh
+        container: qc.doc_bumpy-sangria-cuttlefish
       bitbucket.org/nschaeff/xshells git:
         commands:
-        - /usr/bin/env sh .sqa/script.lanky-cerulean-squirrel.sh
-        container: qc.doc_geeky-burgundy-goose
+        - /usr/bin/env sh .sqa/script.skanky-platinum-rat.sh
+        container: qc.doc_snoopy-rust-wrasse
       bitbucket.org/nschaeff/xshells markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.chewy-salmon-camel.sh
-        container: qc.doc_stinky-khaki-snail
+        - /usr/bin/env sh .sqa/script.ready-bronze-armadillo.sh
+        container: qc.doc_cozy-cornflower-deer
   QC.Lic:
     repos:
       bitbucket.org/nschaeff/xshells licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.lousy-cerulean-cow.sh
-        container: qc.lic_messy-seashell-mau
+        - /usr/bin/env sh .sqa/script.wimpy-white-foxhound.sh
+        container: qc.lic_beady-smalt-terrier
   QC.Sec:
     repos:
       bitbucket.org/nschaeff/xshells bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.grumpy-ultramarine-turtle.sh
-        container: qc.sec_jumpy-indigo-macaw
+        - /usr/bin/env sh .sqa/script.flabby-red-shrew.sh
+        container: qc.sec_gummy-burgundy-barnacle
   QC.Sty:
     repos:
       bitbucket.org/nschaeff/xshells flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.snappy-champagne-angelfish.sh
-        container: qc.sty_goopy-green-centipede
+        - /usr/bin/env sh .sqa/script.leaky-champagne-gibbon.sh
+        container: qc.sty_leaky-silver-dog
   QC.Ver:
     repos:
       bitbucket.org/nschaeff/xshells get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.woolly-chartreuse-dollar.sh
-        container: qc.ver_shaky-chocolate-moth
+        - /usr/bin/env sh .sqa/script.freaky-aqua-uguisu.sh
+        container: qc.ver_lanky-beige-bulldog
 timeout: 5400
