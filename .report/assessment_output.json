@@ -1,0 +1,96 @@
+{
+    "meta": {
+        "version": "2.9.3",
+        "report_json_url": "https://raw.githubusercontent.com/eosc-synergy/xshells.assess.sqaaas/main/.report/assessment_output.json"
+    },
+    "repository": [
+        {
+            "tag": "master",
+            "commit_id": "ed67be75f5e5d6902c3f2e3aa13cb219568f6616",
+            "name": "nschaeff/xshells",
+            "url": "https://bitbucket.org/nschaeff/xshells"
+        }
+    ],
+    "report": {
+        "QC.Met": {
+            "valid": false,
+            "subcriteria": {
+                "QC.Met01": {
+                    "description": "Is the software citable?",
+                    "valid": false,
+                    "hint": "The two formats for software citation supported by SQAaaS are: 1) <a href=\"https://codemeta.github.io/\" target=\"_blank\">CodeMeta</a> and 2) <a href=\"https://citation-file-format.github.io/\" target=\"_blank\">Citation File Format (CFF)</a>. While CodeMeta provides you with a more comprehensive description, CFF is a more lightweight, good-enough approach to software (with built-in support by GitHub) citation. Both provide tools (<a href=\"https://codemeta.github.io/codemeta-generator/\" target=\"_blank\">CodeMeta generator</a>, <a href=\"https://citation-file-format.github.io/cff-initializer-javascript/#/\" target=\"_blank\">CFFINIT</a>)to easily generate a working citation file. Once having the file, be sure to add it to the root path of your code repo.",
+                    "evidence": [
+                        {
+                            "valid": false,
+                            "message": "No matching files found for language <CodeMeta> in repository searching by extensions or filenames\nNo matching files found for language <Citation File Format> in repository searching by extensions or filenames"
+                        }
+                    ],
+                    "required_for_next_level_badge": false
+                }
+            },
+            "coverage": {
+                "percentage": 0,
+                "total_subcriteria": 1,
+                "success_subcriteria": 0
+            }
+        }
+    },
+    "badge": {
+        "software": {
+            "criteria": {
+                "bronze": {
+                    "to_fulfill": [
+                        "QC.Doc",
+                        "QC.Acc",
+                        "QC.Lic"
+                    ],
+                    "missing": [
+                        "QC.Doc",
+                        "QC.Acc",
+                        "QC.Lic"
+                    ],
+                    "fulfilled": []
+                },
+                "silver": {
+                    "to_fulfill": [
+                        "QC.Doc",
+                        "QC.Lic",
+                        "QC.Acc",
+                        "QC.Met",
+                        "QC.Ver"
+                    ],
+                    "missing": [
+                        "QC.Doc",
+                        "QC.Lic",
+                        "QC.Ver",
+                        "QC.Acc",
+                        "QC.Met"
+                    ],
+                    "fulfilled": []
+                },
+                "gold": {
+                    "to_fulfill": [
+                        "QC.Doc",
+                        "QC.Sty",
+                        "QC.Lic",
+                        "QC.Acc",
+                        "QC.Met",
+                        "QC.Sec",
+                        "QC.Ver"
+                    ],
+                    "missing": [
+                        "QC.Doc",
+                        "QC.Sty",
+                        "QC.Lic",
+                        "QC.Sec",
+                        "QC.Ver",
+                        "QC.Acc",
+                        "QC.Met"
+                    ],
+                    "fulfilled": []
+                }
+            },
+            "data": {}
+        }
+    }
+}
