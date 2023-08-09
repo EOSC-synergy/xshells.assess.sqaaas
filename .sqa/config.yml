@@ -5,7 +5,7 @@ config:
       branch: master
       repo: https://bitbucket.org/nschaeff/xshells
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/1.7.11
+      branch: release/1.8.0
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
 environment:
   JPL_DOCKERFORCEBUILD: enabled
@@ -15,44 +15,50 @@ sqa_criteria:
     repos:
       bitbucket.org/nschaeff/xshells git:
         commands:
-        - /usr/bin/env sh .sqa/script.blurry-persimmon-vole.sh
-        container: qc.acc_squeaky-lemon-avocet
+        - /usr/bin/env sh .sqa/script.breezy-coral-clam.sh
+        container: qc.acc_skanky-denim-olm
   QC.Doc:
     repos:
       bitbucket.org/nschaeff/xshells find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.flaky-harlequin-sloth.sh
-        container: qc.doc_flaky-aquamarine-termite
+        - /usr/bin/env sh .sqa/script.wimpy-blue-russel.sh
+        container: qc.doc_leaky-beige-salamander
       bitbucket.org/nschaeff/xshells git:
         commands:
-        - /usr/bin/env sh .sqa/script.seedy-cornflower-dachsbracke.sh
-        container: qc.doc_gloppy-indigo-mole
+        - /usr/bin/env sh .sqa/script.lovely-fuchsia-gecko.sh
+        container: qc.doc_gamy-ruby-catfish
       bitbucket.org/nschaeff/xshells markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.snippy-silver-bee.sh
-        container: qc.doc_stuffy-maroon-albatross
+        - /usr/bin/env sh .sqa/script.snappy-amber-rabbit.sh
+        container: qc.doc_gimpy-firebrick-lemming
   QC.Lic:
     repos:
       bitbucket.org/nschaeff/xshells licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.snoopy-silver-buzzard.sh
-        container: qc.lic_squirrely-alizarin-anteater
+        - /usr/bin/env sh .sqa/script.squirrely-lilac-zebra.sh
+        container: qc.lic_randy-turquoise-gecko
   QC.Sec:
     repos:
       bitbucket.org/nschaeff/xshells bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.cloudy-teal-russel.sh
-        container: qc.sec_nippy-salmon-quail
+        - /usr/bin/env sh .sqa/script.skanky-puce-serval.sh
+        container: qc.sec_stuffy-turquoise-gecko
   QC.Sty:
     repos:
       bitbucket.org/nschaeff/xshells flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.pasty-turquoise-cheetah.sh
-        container: qc.sty_bumpy-celadon-shrimp
+        - /usr/bin/env sh .sqa/script.sleepy-cerulean-malamute.sh
+        container: qc.sty_droopy-taupe-reindeer
+  QC.Uni:
+    repos:
+      bitbucket.org/nschaeff/xshells pytest:
+        commands:
+        - /usr/bin/env sh .sqa/script.lovely-pumpkin-catfish.sh
+        container: qc.uni_stinky-pumpkin-argentino
   QC.Ver:
     repos:
       bitbucket.org/nschaeff/xshells get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.hasty-goldenrod-slug.sh
-        container: qc.ver_gamy-maroon-grouse
+        - /usr/bin/env sh .sqa/script.hilly-ecru-argentino.sh
+        container: qc.ver_cozy-lilac-salamander
 timeout: 5400
