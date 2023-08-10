@@ -1860,9 +1860,9 @@
             "criteria": {
                 "bronze": {
                     "to_fulfill": [
-                        "QC.Lic",
+                        "QC.Acc",
                         "QC.Doc",
-                        "QC.Acc"
+                        "QC.Lic"
                     ],
                     "missing": [
                         "QC.Lic",
@@ -1877,8 +1877,8 @@
                         "QC.Doc",
                         "QC.Met",
                         "QC.Ver",
-                        "QC.Lic",
-                        "QC.Acc"
+                        "QC.Acc",
+                        "QC.Lic"
                     ],
                     "missing": [
                         "QC.Lic",
@@ -1892,20 +1892,20 @@
                 },
                 "gold": {
                     "to_fulfill": [
+                        "QC.Sty",
                         "QC.Doc",
                         "QC.Met",
                         "QC.Ver",
-                        "QC.Sty",
-                        "QC.Lic",
                         "QC.Sec",
-                        "QC.Acc"
+                        "QC.Acc",
+                        "QC.Lic"
                     ],
                     "missing": [
-                        "QC.Lic",
+                        "QC.Sty",
                         "QC.Sec",
+                        "QC.Lic",
                         "QC.Doc",
-                        "QC.Met",
-                        "QC.Sty"
+                        "QC.Met"
                     ],
                     "fulfilled": [
                         "QC.Ver",
