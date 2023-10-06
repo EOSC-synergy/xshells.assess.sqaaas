@@ -15,44 +15,44 @@ sqa_criteria:
     repos:
       gricad-gitlab.univ-grenoble-alpes.fr/schaeffn/xshells git:
         commands:
-        - /usr/bin/env sh .sqa/script.scummy-jade-angelfish.sh
-        container: qc.acc_droopy-copper-octopus
+        - /usr/bin/env sh .sqa/script.cheeky-violet-tuatara.sh
+        container: qc.acc_wiggy-tomato-mammoth
   QC.Doc:
     repos:
       gricad-gitlab.univ-grenoble-alpes.fr/schaeffn/xshells find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.zippy-charcoal-affenpinscher.sh
-        container: qc.doc_surly-linen-oriole
+        - /usr/bin/env sh .sqa/script.stuffy-pink-flamingo.sh
+        container: qc.doc_shaggy-burgundy-chameleon
       gricad-gitlab.univ-grenoble-alpes.fr/schaeffn/xshells git:
         commands:
-        - /usr/bin/env sh .sqa/script.trippy-linen-squid.sh
-        container: qc.doc_hilly-dandelion-octopus
+        - /usr/bin/env sh .sqa/script.scaly-brass-gecko.sh
+        container: qc.doc_bumpy-flax-newfoundland
       gricad-gitlab.univ-grenoble-alpes.fr/schaeffn/xshells markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.shaggy-cinnabar-ostrich.sh
-        container: qc.doc_smelly-red-badger
+        - /usr/bin/env sh .sqa/script.cranky-salmon-dachshund.sh
+        container: qc.doc_paltry-magenta-bison
   QC.Lic:
     repos:
       gricad-gitlab.univ-grenoble-alpes.fr/schaeffn/xshells licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.snappy-cardinal-wasp.sh
-        container: qc.lic_chewy-black-angelfish
+        - /usr/bin/env sh .sqa/script.sleazy-grey-beaver.sh
+        container: qc.lic_shaggy-smalt-salamander
   QC.Sec:
     repos:
       gricad-gitlab.univ-grenoble-alpes.fr/schaeffn/xshells bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.cozy-cyan-centipede.sh
-        container: qc.sec_pokey-ultramarine-chin
+        - /usr/bin/env sh .sqa/script.jumpy-rose-woodlouse.sh
+        container: qc.sec_chewy-aquamarine-octopus
   QC.Sty:
     repos:
       gricad-gitlab.univ-grenoble-alpes.fr/schaeffn/xshells flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.goopy-cyan-flamingo.sh
-        container: qc.sty_skanky-coral-tarsier
+        - /usr/bin/env sh .sqa/script.nippy-bistre-loon.sh
+        container: qc.sty_flaky-harlequin-seahorse
   QC.Ver:
     repos:
       gricad-gitlab.univ-grenoble-alpes.fr/schaeffn/xshells get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.homely-corn-meerkat.sh
-        container: qc.ver_pokey-taupe-cheetah
+        - /usr/bin/env sh .sqa/script.jumpy-teal-kudu.sh
+        container: qc.ver_crabby-flax-jackal
 timeout: 5400
