@@ -3,6 +3,6 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
 (
-cd bitbucket.org/nschaeff/xshells &&
-    get_git_tags.py
+cd gricad-gitlab.univ-grenoble-alpes.fr/schaeffn/xshells &&
+    git rev-parse --is-inside-work-tree
 )

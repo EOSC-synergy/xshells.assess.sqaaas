@@ -3,6 +3,6 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
 (
-cd bitbucket.org/nschaeff/xshells &&
-    pytest --json-report  --json-report-indent 4
+cd gricad-gitlab.univ-grenoble-alpes.fr/schaeffn/xshells &&
+    bandit -f json --quiet  --confidence-level high --severity-level high --recursive .
 )

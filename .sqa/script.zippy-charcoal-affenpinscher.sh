@@ -3,6 +3,6 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
 (
-cd bitbucket.org/nschaeff/xshells &&
+cd gricad-gitlab.univ-grenoble-alpes.fr/schaeffn/xshells &&
     find_doc_files.py --file_type all
 )
