@@ -2,10 +2,10 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/1.7.11
+      branch: release/1.7.13
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     gricad-gitlab.univ-grenoble-alpes.fr/schaeffn/xshells:
-      branch: master
+      branch: test-licence
       repo: https://gricad-gitlab.univ-grenoble-alpes.fr/schaeffn/xshells
 environment:
   JPL_DOCKERFORCEBUILD: enabled
@@ -15,44 +15,50 @@ sqa_criteria:
     repos:
       gricad-gitlab.univ-grenoble-alpes.fr/schaeffn/xshells git:
         commands:
-        - /usr/bin/env sh .sqa/script.grumpy-ultramarine-clam.sh
-        container: qc.acc_homely-pear-toad
+        - /usr/bin/env sh .sqa/script.nippy-chestnut-fossa.sh
+        container: qc.acc_snoopy-apricot-paradise
   QC.Doc:
     repos:
       gricad-gitlab.univ-grenoble-alpes.fr/schaeffn/xshells find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.chewy-flax-tortoise.sh
-        container: qc.doc_droopy-tan-owl
+        - /usr/bin/env sh .sqa/script.muggy-charcoal-cow.sh
+        container: qc.doc_scaly-burgundy-rottweiler
       gricad-gitlab.univ-grenoble-alpes.fr/schaeffn/xshells git:
         commands:
-        - /usr/bin/env sh .sqa/script.freaky-ivory-vulture.sh
-        container: qc.doc_homely-peach-turkey
+        - /usr/bin/env sh .sqa/script.snappy-mustard-mayfly.sh
+        container: qc.doc_lumpy-orange-sheep
       gricad-gitlab.univ-grenoble-alpes.fr/schaeffn/xshells markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.squeaky-pear-wolf.sh
-        container: qc.doc_slaphappy-ivory-beetle
+        - /usr/bin/env sh .sqa/script.nippy-linen-dachsbracke.sh
+        container: qc.doc_freaky-vermilion-turtle
   QC.Lic:
     repos:
       gricad-gitlab.univ-grenoble-alpes.fr/schaeffn/xshells licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.stealthy-myrtle-ant.sh
-        container: qc.lic_snippy-white-stingray
+        - /usr/bin/env sh .sqa/script.hazy-turquoise-angora.sh
+        container: qc.lic_lanky-rust-retriever
+  QC.Met:
+    repos:
+      gricad-gitlab.univ-grenoble-alpes.fr/schaeffn/xshells cff-converter-python:
+        commands:
+        - /usr/bin/env sh .sqa/script.flimsy-wheat-cougar.sh
+        container: qc.met_blurry-mustard-booby
   QC.Sec:
     repos:
       gricad-gitlab.univ-grenoble-alpes.fr/schaeffn/xshells bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.paltry-burgundy-tarantula.sh
-        container: qc.sec_surly-burgundy-wallaby
+        - /usr/bin/env sh .sqa/script.gimpy-linen-reindeer.sh
+        container: qc.sec_stuffy-zucchini-walrus
   QC.Sty:
     repos:
       gricad-gitlab.univ-grenoble-alpes.fr/schaeffn/xshells flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.grumpy-chestnut-greyhound.sh
-        container: qc.sty_shabby-rust-budgerigar
+        - /usr/bin/env sh .sqa/script.lousy-heliotrope-retriever.sh
+        container: qc.sty_sickly-apricot-caiman
   QC.Ver:
     repos:
       gricad-gitlab.univ-grenoble-alpes.fr/schaeffn/xshells get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.homey-cerise-goat.sh
-        container: qc.ver_wheezy-lavender-antelope
+        - /usr/bin/env sh .sqa/script.droopy-red-manatee.sh
+        container: qc.ver_stealthy-blue-tetra
 timeout: 5400
